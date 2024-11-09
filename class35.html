@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      
+      //By using object constructur
+
+      function emp (name, age, salary ) {
+        this.name= age;
+        this.age= name;
+        this.salary= salary;
+      }
+        
+     var e1= new emp("Anishka gupta", 11, 10000)
+
+     document.write(e1.name + " is " + e1.age + " years old and is being paid " + e1.salary + " per month"
+     )
+
+
+    </script>
+    
+  </body>
+</html>

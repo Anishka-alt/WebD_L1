@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button id="btn" onmouseover="MouseOver()" onmouseout="MouseOut()" onmousedown="MouseDown()" onmouseup="MouseUp()">Testing</button>
+
+<script>
+
+function MouseOver(){
+    document.getElementById("btn").style.backgroundColor="blue"
+}
+
+function MouseOut(){
+    document.getElementById("btn").style.backgroundColor="red"
+}
+
+function MouseDown(){
+    document.getElementById("btn").style.backgroundColor="green"
+
+   document.getElementById("btn").style.fontSize="30px"
+    
+}
+
+
+function MouseUp(){
+    document.getElementById("btn").style.backgroundColor="yellow"
+
+    document.getElementById("btn").style.fontSize="20px"
+}
+
+</script>
+</body>
+</html>

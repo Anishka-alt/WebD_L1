@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <header><h1 style="text-align: center">Light Switch on and off</h1></header>
+    <h3 style="text-align: center">CLICK THE BUTTON TO ON AND OFF</h3>
+  </head>
+  <body>
+    <img
+      id="img1"
+      src="https://vectorified.com/images/grey-circle-icon-18.png"
+      alt=""
+      width="230px"
+      height="230px"
+    /><br />
+    <button id="btn1" onclick="changeImage()">Turn On</button>
+
+    <script>
+      function changeImage() {
+        document.getElementById("img1").setAttribute("src","https://www.publicdomainpictures.net/pictures/310000/velka/yellow-circle.png")
+      }
+    </script>
+  </body>
+</html>

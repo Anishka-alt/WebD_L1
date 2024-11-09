@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+
+          
+            
+            background-image: url("https://img.freepik.com/free-vector/digital-learning-background-with-colorful-items-flat-design_23-2147593077.jpg")
+
+           
+        }
+        div{
+            text-align: center;
+            background-color: white;
+            color: orange;
+            padding-top: 10%;
+            padding-bottom: 10%;
+            border-radius: 16%;
+           margin-top: 42.5%;
+        }
+
+        button{
+               background-color: yellow; 
+            }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Online Learning Website</h1>
+        <h3>Welcome to our online learning platform! Click the <br>"Enroll Now" button to join the course</h3>
+        <button onclick="getData()">Enroll Now</button>
+    </div>
+    <script>
+        function getData(){
+            var name = prompt("Enter your name");
+            alert("Welcome " + name + "! You have succesfully enrolled in the course");
+        }
+    </script>
+</body>
+</html>

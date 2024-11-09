@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+h2{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+h1{
+    text-align: center;
+    color: black;
+}
+
+body{
+    text-align: center;
+    background-image: url("https://d31xsmoz1lk3y3.cloudfront.net/big/1391789.jpg?v=1534011542");
+}
+
+script{
+    color: black;
+    size: 30px;
+}
+
+</style>
+
+</head>
+<body>
+    
+<h2>Guess The Number Game</h2>
+
+<h1>Guess A Number Bettween 1 and 10:</h1>
+
+
+
+
+    <br><br>
+<input type="text" id="guess">
+<button onclick="check()">Submit Answer</button>
+
+<p id= message></p>
+
+    <script>
+ let computer = Math.floor(Math.random() * 10) +1
+
+ function check(){
+    let guess = parseInt(document.getElementById("guess").value) 
+
+if (guess==computer){
+    document.getElementById("message").innerHTML= "Congrats!!! You got the Number Right"
+}
+
+else if (guess<computer){
+    document.getElementById('message').innerHTML= 'Your answer was too low. please try again'}
+    
+else if (guess>computer){
+        document.getElementById('message').innerHTML= 'Your answer was too high. please try again'}
+ }
+
+    </script>
+</body>
+</html>

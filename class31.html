@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1{color: rgb(0, 0, 0);}
+        h3{
+            color: rgb(0, 0, 0);}
+
+        body{
+            text-align: center;
+            
+            background-image:url("https://img.freepik.com/premium-photo/set-various-social-media-blocks-blue-painted-wall_23-2147841215.jpg?w=2000");
+        }
+
+        button{
+            background-color: rgb(58, 216, 58);
+        }
+
+        
+        .default-text::after{
+            content:"Social Media is  digital technolagy that allows the sharing of ideas and information, including texts and visuals, through virtual networks and communities. Social media mostly features user-generated comments that tends itself to engagement via like, shares, comments and discussion" ;
+
+        }
+
+        .active-text::after{content:""}
+    </style>
+</head>
+<body>
+    <h1>Social Media</h1>
+
+    <h3 id="text1" class="default-text"></h3>
+
+    <button onclick="textChange()">Click me</button>
+
+   <script>
+
+    function textChange(){
+        document.getElementById("text1").innerHTML=""
+        document.getElementById("text1").classList.toggle("active-text")
+    }
+   </script>
+</body>
+</html>

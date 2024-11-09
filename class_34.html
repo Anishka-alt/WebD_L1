@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            text-align: center;
+            background-image: url("https://i.pinimg.com/736x/1f/0d/d7/1f0dd76df55fe553f58c29574b764a91.jpg");
+        }
+
+        h1{
+            background-color: aqua;
+             color: rgb(237, 118, 158);
+             padding-bottom:5px ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teady Bear Store</h1>
+
+    <h2 id="p1" onmouseout="MouseOut()" onmouseover="MouseOver()"
+    onmousedown="MouseDown()">At our e-gifting portal, you will be delivered a variety of diffrent soft toys including tiger, elephant, dog, cat , penguin, koala, parrot and thousands more. Buying at GoGift.in provides you with soft toys at the best quality and at a reasonable price.
+    </h2>
+    <script>
+function MouseOut(){
+document.getElementById("p1").style.color="black"
+}
+
+function MouseOver(){
+    document.getElementById("p1").style.color="white" 
+}
+
+function MouseDown(){
+    document.getElementById("p1").style.color="red"
+}
+    </script>
+</body>
+</html>

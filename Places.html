@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .images {
+        display: flex;
+      }
+      .images {
+        width: 120px;
+        height: 100px;
+      }
+
+      body{
+        background-color: rgb(0, 80, 133);
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="text-align: center">
+      <h1><header>Dev Tours and Travel</header></h1>
+      <h2>About Us</h2>
+      <h3>Dev tours and travel is a company dedicated to being the perfect travel site for you. </h3>
+    </div>
+
+    <div>
+      <img id="bigImage" src="" alt="" class="img-main" />
+    </div>
+
+    <div class="images">
+      <img
+        src="https://expertvagabond.com/wp-content/uploads/cancun-things-to-do-guide-1536x1024.jpg"
+        onclick="displayImage(src)"
+      />
+
+      <img
+        src="https://expertvagabond.com/wp-content/uploads/things-to-do-athens-guide.jpg"
+        onclick="displayImage(src)"
+      />
+
+      <img
+        src="https://assets.voxcity.com/uploads/product_image/Venice%20Grand%20Canal%20Gondola%20Ride%20%2B%20Venice%20City%20Walking%20Tour-image-1_gallery.jpg"
+        onclick="displayImage(src)"
+      />
+
+      <img
+      src="https://expertvagabond.com/wp-content/uploads/moshi-materuni-waterfall-XL.jpg.webp
+      "
+      onclick="displayImage(src)"
+    />
+
+    <img
+    src="https://assets.voxcity.com/uploads/product_image/gardens-by-the-bay-singapore-tour_list.jpg"
+    onclick="displayImage(src)"
+  />
+    </div>
+
+    <script>
+      function displayImage(imageSource) {
+        document.getElementById("bigImage").src = imageSource;
+      }
+    </script>
+  </body>
+</html>

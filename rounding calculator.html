@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+h1{
+    color: blue;
+}
+
+h3{
+    color: rgb(39, 164, 164);
+}
+
+body{
+    background-image: url("https://i.pinimg.com/736x/b1/06/6d/b1066d73c4c88481379372fedfa49b79.jpg");
+
+    background-size: 800px;
+
+    text-align: center;
+}
+
+div{
+            background-color: white;
+            margin-top: 35%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+    <header><h1>Round OFF calculator</h1></header>
+    <h3>INPUT THE NUMBER</h3>
+    
+        <input id="num1" type="number" />
+        <br /><br />
+    
+        <button onclick="number_1()">Calculate</button>
+    
+        <br><br>
+        </div>
+    
+        <script>
+          function number_1() {
+            // Method returns the element of percent id
+            let num1 = document.getElementById("num1").value;
+    
+            document.getElementById("num1").value = Math.round(num1);
+          }
+
+          
+        </script>
+      </body>
+    </html>

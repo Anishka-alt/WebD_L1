@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       
+h1{ 
+           color: black;
+        }
+
+        body{
+            text-align: center;
+            background-color: rgb(103, 0, 121);
+        }
+      
+        h3{
+            color: black;
+        }
+       
+        div{
+            margin-top: 10px;
+            padding-top: 1px;
+           padding-bottom: 500px;
+           padding-left: 5px;
+           padding-right: 5px;
+            background-color: rgb(110, 229, 73);
+        }
+        
+
+        .default-text::after{
+        content:" Javascript is the world's most popular programming language. Javascript is the programming language of the Web";
+        }
+        
+        .active-text::after{
+        content:" JAVASCRIPT IS THE WORLD'S MOST POPULAR PROGRAMMING LANGUAGE. JAVASCRIPT IS THE PROGRAMMING LANGUGE OF THE WEB";
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <div>
+    <h1 style="text-align: center;"><u>Javascript</u></h1>
+    <hr>
+    <br>
+
+    <h3 id="text1" class="default-text"></h3>
+    <button onclick="textChange()">Click To Learn More</button>
+<br><br>
+</div>
+
+    <script>
+        function textChange(){
+            document.getElementById("text1").innerHTML=""
+                document.getElementById("text1").classList.toggle("active-text");
+                
+        }
+
+         
+
+    </script>
+
+    
+</body>
+</html>
